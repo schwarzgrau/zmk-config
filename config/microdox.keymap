@@ -60,9 +60,9 @@
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp EQUAL   &kp LS(LC(X) &kp LS(HOME) &kp LS(LC(Y) &kp LS(F)       &trans      &trans      &trans      &trans      &trans      
+    &kp EQUAL   &kp LS(LC(X)) &kp LS(HOME) &kp LS(LC(Y)) &kp LS(F)  &trans      &trans      &trans      &trans      &trans      
     &trans      &kp LS(LEFT) &kp LS(K)  &kp LS(RIGHT) &kp RET       &trans      &trans      &trans      &trans      &trans      
-    &trans      &kp LS(C)   &kp G       &kp LS(V)   &kp LS(LC(PG_UP) &trans      &trans      &trans      &trans      &trans      
+    &trans      &kp LS(C)   &kp G       &kp LS(V)   &kp LS(LC(PG_UP)) &trans    &trans      &trans      &trans      &trans      
                             &trans      &trans      &trans          &trans      &trans      &trans
                           >;
                 };
