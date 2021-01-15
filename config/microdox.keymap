@@ -7,8 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
-
 
 #define TVP1 0
 #define TVP2 1
@@ -18,7 +16,6 @@
                 compatible = "zmk,keymap";
 
                 tvp1_layer {
-
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃ t v p a i n t                         ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -44,7 +41,6 @@
                 };
 
                 tvp2_layer {
-
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 // ┃ t v p a i n t  II                     ┃
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
@@ -70,6 +66,3 @@
                 };
         };
 };
-
-
-//&ext_power EP_TOG
