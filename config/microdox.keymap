@@ -42,7 +42,7 @@
                 timeout-ms = <100>;
                 key-positions = <12 13 14>;
                 bindings = <&tog TVP1>;
-            }
+            };
     };
 
 
