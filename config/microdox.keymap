@@ -24,8 +24,9 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            tapping_term_ms = <200>;
-            flavor = "balanced";
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
 
@@ -61,7 +62,7 @@ label= "BASE"                              ;
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃     A     ┃     R     ┃     S     ┃     T     ┃     D     ┃   ┃     H     ┃     N     ┃     E     ┃     I     ┃     O     ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃     ,     ┃     .     ┃     /     ┃
+// ┃     Z     ┃     X     ┃     C     ┃     V     ┃     B     ┃   ┃     K     ┃     M     ┃         ┃     .     ┃     /     ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                         ┃    DEL    ┃    TAB    ┃    SPC    ┃   ┃   BSPC    ┃   ENTER   ┃     \     ┃
 //                         ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -69,7 +70,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
     &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
-    &hm LGUI A  &hm LALT R  &hm LCTRL S &hm LSHFT T &kp D           &kp H       &hm RSHFT N &hm RCTRL E  &hm RALT I  &hm RGUI O
+    &hm LGUI A  &hm LALT R  &hm LCTRL S &hm LSHFT T &kp D           &kp H       &hm RSHFT N &hm RGUI E  &hm RALT I  &hm RCTRL O
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH
                             &kp DEL     &lt NAV TAB &kp SPACE       &kp BSPC    &lt SYM RET &kp BSLH
                         >;
@@ -119,9 +120,10 @@ label= "SYM"                               ;
 //                         ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
-	&kp RA(Q)   &kp RA(W)   &kp RA(F)   &kp RA(P)   &kp RA(G)       &kp RA(J)   &kp RA(L)   &kp RA(U)   &kp RA(Y)   &kp RA(SEMI)
-    &kp RA(A)   &kp RA(R)   &kp RA(S)   &kp RA(T)   &kp RA(D)       &kp RA(H)   &kp RA(N)   &kp RA(E)   &kp RA(I)   &kp RA(O)
-    &kp RA(Z)   &kp RA(X)   &kp RA(C)   &kp RA(V)   &kp RA(B)       &kp RA(K)   &kp RA(M)   &kp RA(COMMA) &kp RA(DOT) &kp RA(FSLH)
+
+    &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      
+    &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      
+    &trans      &trans      &trans      &trans      &trans          &trans      &trans      &trans      &trans      &trans      
                             &trans      &mo ADJ     &trans          &trans      &trans      &trans
                         >;
                 };
