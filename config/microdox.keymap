@@ -166,16 +166,16 @@ label= "TVP"                               ;
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃ TVP II    ┃ LEFT      ┃ PAN       ┃ RIGHT     ┃ PLAY      ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃ SHIFT     ┃ COPY      ┃*DELETE    ┃ PASTE     ┃*IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃
+// ┃ SHIFT     ┃ COPY      ┃ DELETE    ┃ PASTE     ┃*IMG MARK  ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                         ┃           ┃           ┃           ┃   ┃           ┃           ┃           ┃
 //                         ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp LC(L)   &kp I       &kp LC(LALT) &kp O      &kp F           &none       &none       &none       &none       &none
+    &kp LC(L)   &kp I       &kp LC(LALT) &kp O      &kp LS(F20)     &none       &none       &none       &none       &none
     &mo TVP2    &kp LEFT    &kp LALT    &kp RIGHT   &kp SPACE       &none       &none       &none       &none       &none
-    &kp LSHFT   &kp LC(C)   &kp BSPC    &kp LC(V)   &kp M           &none       &none       &none       &none       &none
+    &kp LSHFT   &kp LC(C)   &kp BSPC    &kp LC(V)   &kp LS(F19)     &none       &none       &none       &none       &none
                             &none       &none       &none           &none       &none       &none       
                         >;
                 };
@@ -192,16 +192,16 @@ label= "TVP II"                            ;
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
 // ┃ ---       ┃ LAST KEY  ┃*NEW KEY   ┃ NEXT KEY  ┃ ENTER     ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-// ┃           ┃ CPY2BRUSH ┃ DEL HEAD  ┃ PSTinPLACE┃*BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃
+// ┃           ┃ CPY2BRUSH ┃*DEL HEAD  ┃ PSTinPLACE┃*BOOK MARK ┃   ┃           ┃           ┃           ┃           ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┛
 //                         ┃ POWER TOG ┃           ┃ BT Clear  ┃   ┃           ┃           ┃           ┃
 //                         ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
-    &kp EQUAL   &kp LS(I)  &kp LS(HOME) &kp LS(O)   &kp LS(F)       &trans      &trans      &trans      &trans      &trans      
-    &trans      &kp LS(LEFT) &kp K      &kp LS(RIGHT) &kp RET       &trans      &trans      &trans      &trans      &trans      
-    &trans      &kp LS(C)   &kp G       &kp LS(V)   &kp LC(B)       &trans    &trans      &trans      &trans      &trans      
+    &kp LS(F18) &kp LS(I)  &kp LS(HOME) &kp LS(O)   &kp LS(F)       &trans      &trans      &trans      &trans      &trans      
+    &trans      &kp LS(LEFT) &kp LS(F17) &kp LS(RIGHT) &kp RET      &trans      &trans      &trans      &trans      &trans      
+    &trans      &kp LS(C)   &kp LS(F16) &kp LS(V)   &kp LS(F15)     &trans    &trans      &trans      &trans      &trans      
                             &ext_power EP_TOG &trans  &bt BT_CLR    &trans      &trans      &trans
                           >;
                 };
