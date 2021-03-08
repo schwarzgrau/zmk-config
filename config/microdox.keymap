@@ -70,7 +70,7 @@ label= "BASE"                              ;
 // ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷
 
     &kp Q       &kp W       &kp F       &kp P       &kp G           &kp J       &kp L       &kp U       &kp Y       &kp SEMI
-    &kp A       &hm LALT R  &hm LCTRL S &hm LSHFT T &kp D           &kp H       &hm RSHFT N &hm RCTRL E &hm RALT I  &kp O
+    &kp A       &kp R       &kp S      	&hm LSHFT T &kp D           &kp H       &hm RSHFT N &kp E       &kp I       &kp O
     &kp Z       &kp X       &kp C       &kp V       &kp B           &kp K       &kp M       &kp COMMA   &kp DOT     &kp FSLH
                             &kp DEL     &kp TAB     &lt NAV SPACE   &lt SYM RET &kp BSPC    &kp BSLH
                         >;
